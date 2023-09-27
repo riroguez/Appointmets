@@ -1,0 +1,205 @@
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 18px;
+    font-size: 1.8rem;
+    background-image: linear-gradient(to right, #a34eec 0%, #4e7dec 100%);
+}
+h1 {
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+}
+h2 {
+    font-size: 3.6rem;
+    color: white;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    h2 {
+        font-size: 4.8rem;
+    }
+}
+/*container*/
+.container {
+    max-width: min(95%, 120rem);
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+/*grid appointment*/
+.container-grid {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+}
+
+@media (min-width: 768px) {
+    .container-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*form*/
+.form, .container-appointment {
+    background-color: #f6f7f8;
+    padding: 4rem 2rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 7);
+}
+@media (min-width: 768px) {
+    .form {
+        padding: 5rem;
+    }
+}
+.fields {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    color: #6a6a6a;
+}
+
+.public-attention {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.fields input, textarea {
+    width: 100%;
+    border: none;
+    border: 1px solid #dbdbdb;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: #6a6a6a;
+    font-size: 1.8rem;
+}
+
+.fields input:focus,
+.fields input:active,
+.fields textarea:focus,
+.fields textarea:focus {
+    outline: none;
+    border: 1px solid #a24eec3d;
+    box-shadow: 0 0 6px #a24eec3d;
+}
+
+button[type="submit"] {
+    border: none;
+    background-color: #4e7dec;
+    color: white;
+    padding: 1rem 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.9rem;
+    border-radius: .5rem;
+    transition: background-color .3s ease;
+}
+button[type="submit"]:hover {
+    background-color: #4478f1;
+    cursor: pointer;
+}
+
+/*data cita*/
+@media (min-width:768px) {
+    .container-appointment {
+        overflow: scroll;
+        height: 73rem;
+    }    
+}
+
+.con-appointment {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 0 2rem 3rem 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .con-appointment {
+        padding: 0 4rem 3rem 4rem;
+    }
+}
+.con-appointment:first-child {
+    margin-top: 0;
+}
+
+.heading-pet {
+    color: #6a6a6a;;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.parragraph {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4e7dec;
+    margin-bottom: 1.2rem;
+}
+
+.parragraph span {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #6a6a6a;
+}
+
+.btn-delete,
+.btn-update,
+.btn-cancel {
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background-color: red;
+}
+.btn-update {
+    background-color: #03cece;
+    margin-right: .5rem;
+}
+.btn-cancel {
+    background-color: #abab01;
+    margin-right: .5rem;
+}
+
+/*alert*/
+.alert {
+    margin: 2rem 0;
+    background-color: #f3f3f3;
+    padding: 1rem 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 7);
+}
+
+.error {
+    color: red;
+    border-left: 3px solid red;
+    padding-left: 1.5rem;
+    font-weight: 700;
+}
+
+.success {
+    color: green;
+    border-left: 3px solid green;
+    padding-left: 1.5rem;
+    font-weight: 700;
+}

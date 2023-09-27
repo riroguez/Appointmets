@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <h1>Clinica Veterinaria</h1>
+        <div class="container-grid">
+            <div class="container-form">
+                <h2>Crear Cita</h2>
+                <div id="error-alert"></div>
+                <form class="form" id="formAppointment">
+                    <div class="fields">
+                        <label for="owner">Propietario</label>
+                        <input type="text" id="owner" name="owner" placeholder="Propietario">
+                    </div>
+                    <div class="fields">
+                        <label for="pet">Mascota</label>
+                        <input type="text" id="pet" name="pet" placeholder="Mascota">
+                    </div>
+                    <div class="fields">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Teléfono" max="10">
+                    </div>
+                    <div class="fields">
+                        <label for="dateAppointment">Fecha</label>
+                        <input type="date" id="dateAppointment" name="dateAppointment" placeholder="Propietario">
+                    </div>
+                    <div class="fields">
+                        <label for="hourAppointment">Hora <span class="public-attention">(Atención de 06:00 a 18:00)</span></label>
+                        <input type="time" id="hourAppointment" name="hourAppointment" placeholder="Propietario">
+                    </div>
+                    <div class="fields">
+                        <label for="symptoms">Síntomas</label>
+                        <textarea id="symptoms" name="symptoms" rows="3" placeholder="Síntomas"></textarea>
+                    </div>
+                    <button type="submit">Crear Acita</button>
+                </form>
+
+            </div>
+            <div class="container-list">
+                <h2>Datos Cita</h2>
+                <div id="error-alert-appo"></div>
+                <div class="container-appointment" id="containerAppointment"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/app.js" type="module"></script>
+</body>
+
+</html>
